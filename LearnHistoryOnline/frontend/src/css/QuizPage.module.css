@@ -1,0 +1,170 @@
+@font-face {
+    font-family: poppins;
+    src: url("../../public/Poppins-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-family: poppins;
+}
+
+.QuizPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-block: 20px;
+}
+
+.question {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentQuestion {
+    display: flex !important;
+}
+
+.prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 89);
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.question > div {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.answer {
+    width: 292px;
+    margin-inline: 4px;
+    margin-top: 8px;
+    height: 100px;
+    border: 0;
+    background-color: rgb(13, 110, 253);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.answer:hover {
+    box-shadow: 0px 0px 5px 5px blue;
+}
+
+.selectedAnswer {
+    background-color: rgb(0, 178, 0) !important;
+}
+
+.selectedAnswer:hover {
+    box-shadow: 0px 0px 5px 5px green !important;
+}
+
+.number {
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuizPage button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.QuizPage button:hover {
+    transform: scale(1.01);
+}
+
+.QuizPage > * > button:last-child {
+    width: 200px;
+    height: 75px;
+    align-self: flex-end;
+    background-color: rgb(255, 0, 0);
+    border: 0;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.1 ease;
+}
+
+.green {
+    color:rgb(0, 178, 0) !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.tryagain {
+    padding: 40px;
+    padding-block: 20px;
+    background-color: rgb(0, 178, 0);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: fit-content;
+    margin-block: 10px;
+}
+
+.back {
+    padding: 40px;
+    padding-block: 20px;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: fit-content;
+    margin-block: 10px;
+    margin-top: 0;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 340px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px gray;
+    align-items: center;
+}
+
+.results > div {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.results > div > div {
+    font-size: 30px;
+    font-weight: bold;
+}

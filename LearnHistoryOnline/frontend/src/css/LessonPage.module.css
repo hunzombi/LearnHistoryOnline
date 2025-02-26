@@ -1,0 +1,93 @@
+@font-face {
+    font-family: poppins;
+    src: url("../../public/Poppins-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-family: poppins;
+}
+
+.noLessonFound {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.LessonPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.content {
+    width: 1000px;
+    min-height: 300px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.author {
+    width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.quizButton {
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: #14A44D;
+    border: 2px solid #01471d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.imageHolder {
+    width: 100vw;
+    height: calc(100vh + 10px);
+    position: fixed;
+    z-index: -20;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    top: -5px;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.black {
+    color: black !important;
+}
+
+.white {
+    color: white !important;
+}

@@ -1,0 +1,250 @@
+@font-face {
+    font-family: poppins;
+    src: url("../../public/Poppins-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-family: poppins;
+}
+
+*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 20px;
+}
+
+.createPage{
+    display: flex;
+}
+
+.createPage > *{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+}
+
+.createPage > * > h1:first-child {
+    margin-bottom: 20px;
+}
+
+.createForm {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createForm > form {
+    width: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.createForm > form > input {
+    outline: none !important;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-block: 10px;
+}
+
+.createForm > form > textarea{
+    outline: none;
+    padding: 5px;
+    width: 500px;
+    height: 208px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.quizForm > textarea {
+    margin-top: 5px;
+    outline: none;
+    padding: 5px;
+    width: 500px;
+    height: 108px;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.answersForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.answersForm > div {
+    display: flex;
+    border: 1px solid darkblue;
+    width: 450px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    margin-top: 10px;
+}
+
+.answersForm > div > span {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid darkblue;
+}
+
+.answersForm > div > input {
+    width: 250px;
+    margin-left: 25px;
+    height: 30px;
+    border: none;
+    outline: none !important;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    border-bottom: 1px solid darkblue;
+    font-size: 15px;
+}
+
+.selectedValue {
+    background-color: #14A44D !important;
+    border-color: #01471d !important;
+}
+
+.selectedValue > span {
+    border-right: 1px solid #01471d !important;
+}
+
+.selectedValue > input {
+    background-color: #14A44D !important;
+    border-color: #01471d !important;
+}
+
+.quizForm select {
+    width: 150px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.quizForm button {
+    margin-top: 20px;
+    background-color: rgb(13, 110, 253);
+    border: 1px solid darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    margin-left: 320px;
+}
+
+.quizForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+}
+
+.questionsTable {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.questionsTable * {
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row > * {
+    display: flex;
+    align-items: center;
+    padding-inline: 5px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.row:first-child > * {
+    font-weight: bold;
+}
+
+.col1 {
+    width: 150px;
+    border-right: 1px solid black;
+}
+
+.col2 {
+    width: 200px;
+    border-right: 1px solid black;
+}
+
+.col3 {
+    width: 150px;
+    border-right: 1px solid black;
+}
+
+.col4 {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createForm > button {
+    background-color: #14A44D;
+    border: 1px solid #01471d;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview > div {
+    padding-top: 20px;
+    width: 600px;
+    min-height: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.preview > div > p {
+    font-size: 15px;
+}
+
+.authorName {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.myPlaceholder {
+    color: rgb(95, 95, 95) !important;
+}
